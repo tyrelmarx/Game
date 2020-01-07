@@ -3,6 +3,7 @@ using UnityEngine.Events;
 
 public class CharacterController2D : MonoBehaviour
 {
+    public Animator animator;
     [SerializeField] private float m_JumpForce = 400f;                          // Amount of force added when the player jumps.
     [SerializeField] private float m_fallMultiplier = 2.5f;                     // Amount of force added when the player jumps.
     [SerializeField] private float m_lowJumpMultiplier = 2.5f;                  // Amount of force added when the player jumps.
@@ -52,6 +53,8 @@ public class CharacterController2D : MonoBehaviour
     {
 
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
         if (Input.GetButtonDown("Jump"))
         {
