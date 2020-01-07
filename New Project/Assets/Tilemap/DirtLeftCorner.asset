@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: DirtLeftCorner
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 7c0fa7ac858609e4aa67b0b978921bcb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bdacfbd63c14f684ba455ca78c2bd054, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
